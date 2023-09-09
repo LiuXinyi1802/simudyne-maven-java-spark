@@ -6,6 +6,7 @@ This model is used to further explore the connectivity and centrality in banking
 
 #Run the model:
 
-run the main
+1. run the main.java
+2. open the Simudyne Console through http://localhost:8080/
 
 
