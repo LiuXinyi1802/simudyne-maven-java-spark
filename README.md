@@ -1,6 +1,11 @@
-# Simudyne Implementation of Chain Bankruptcy Model
+This is an agent-based model built based on a chain bankruptcy model from Hamawaki et al.
 
-This is an agent-based chain bankruptcy model built in the Simudyne SDK and based on the work by Professor Izumi at University of Tokyo
-publication can be found here: https://link.springer.com/article/10.1007/s42001-019-00041-z
+It has some novelty aspects to improve this model and make it more assess to the real banking system. For instance, it introduce a systemic shock and continuous monitoring the contagion risks in the banking system. In addition it employ a heterogeneous structure and distinguish the different bank sizes.
+
+This model is used to further explore the connectivity and centrality in banking system when facing systemic shocks.
+
+#Run the model:
+
+run the main
 
 
