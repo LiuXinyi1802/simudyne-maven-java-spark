@@ -29,7 +29,7 @@ public class SmallBank extends Agent<TokyoModel.Globals> {
 
     public double tao = 1.0;
 
-    @Variable
+    //@Variable
     public double capAdequacy;
     @Variable
     public double netWorth;
@@ -148,7 +148,7 @@ public class SmallBank extends Agent<TokyoModel.Globals> {
             if (!smallBank.getGlobals().LargeBankrupty) {
 
                 // Make the amount of interbank lending count towards the Net Worth of the bank.
-                smallBank.netLending = (smallBank.getLinks().size()-5) * 10 -80; // each loan from smallBank is for 10, from each largeBnak is 80
+                smallBank.netLending = (smallBank.getLinks().size()-5) * 10 -80*5; // each loan from smallBank is for 10, from each largeBnak is 80
                System.out.println(smallBank.getLinks()+" size "+smallBank);
                System.out.println(" "+smallBank.netLending);
                 smallBank.netWorth = (smallBank.stockNum * smallBank.getGlobals().riskAssetPrice)

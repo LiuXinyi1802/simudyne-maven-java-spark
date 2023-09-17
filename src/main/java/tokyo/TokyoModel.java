@@ -25,7 +25,7 @@ public class TokyoModel extends AgentBasedModel<TokyoModel.Globals> {
     public int nbSmallBanks = 100;
 
     @Constant
-    public int networkType =0; // 0: Scale-Free, 1: core-periphery Network, 2: Random
+    public int networkType =1; // 0: Scale-Free, 1: core-periphery Network, 2: Random
 
     @Constant
     public int weightType = 1; // 0: Uniform, 1: Gaussian
@@ -49,7 +49,8 @@ public class TokyoModel extends AgentBasedModel<TokyoModel.Globals> {
         public int nbRiskAssetsSold = 0; // risk assets sold in previous period
 
         @Variable
-        public int numB = 0, check = 0;
+        public int numB = 0;
+        public int check = 0;
 
         @Constant
         public double alpha = 0.5; // coefficient of price fluctuations
